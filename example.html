@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+  <head>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    with setFixedInterval
+    <div id="setFixed"></div>
+    with setInterval
+    <div id="setInt"></div>
+    <script>
+      var i = 0;
+      var b = new Date().getTime();
+      var fRuns = 0;
+      setFixedInterval(function(delta) {
+        i += delta;
+        fRuns++;
+        var diff = new Date().getTime() - b;
+        document.body.children.setFixed.innerHTML = i;
+        document.body.children.setFixed.innerHTML += " - " + String(diff) + " runs: " + String(fRuns);
+      }, 100);
+
+
+      var iRuns = 0;
+      setInterval(function() {
+        iRuns++;
+        var diff = new Date().getTime() - b;
+        document.body.children.setInt.innerHTML = " - " + String(diff) + " runs: " + String(iRuns);
+      }, 100);
+
+      // slow function
+      setInterval(function() {
+        var n = 10000000;
+        var arr = new Array(n);
+        for (var i = 0; i < n; i++) {
+          arr[n] = 10 / n;
+        }
+      }, 100);
+    </script>
+  </body>
+</html>

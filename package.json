@@ -1,0 +1,25 @@
+{
+  "name": "fixed-setinterval",
+  "version": "0.1.0",
+  "description": "A setInterval replacement that accounts for delays and gives you a delta time as a parameter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "setinterval",
+    "time",
+    "game",
+    "loop"
+  ],
+  "author": "Leo Moura",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfsmoura/fixed-timeout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lfsmoura/fixed-timeout/issues"
+  },
+  "homepage": "https://github.com/lfsmoura/fixed-timeout#readme"
+}
