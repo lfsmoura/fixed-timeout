@@ -23,4 +23,6 @@ var setFixedInterval = function(fn, ms, options) {
   };
 };
 
-module.exports = setFixedInterval;
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = setFixedInterval;
+}
