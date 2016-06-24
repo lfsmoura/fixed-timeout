@@ -22,3 +22,7 @@ var setFixedInterval = function(fn, ms, options) {
     clearTimeout(clear_id);
   };
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = setFixedInterval;
+}
