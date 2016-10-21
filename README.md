@@ -1,5 +1,6 @@
 FixedTimeInterval
 ==
+[![Build Status](https://travis-ci.org/lfsmoura/fixed-timeout.svg?branch=master)](https://travis-ci.org/lfsmoura/fixed-timeout)
 
 Javascript has an awesome function called `setInterval`. The problem is that that function can delay some seconds or can run erraticaly if there are slow functions running in between calls.
 
